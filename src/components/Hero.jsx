@@ -92,6 +92,7 @@ const Hero = () => {
                 to="about"
                 smooth={true}
                 duration={500}
+                style={{cursor:'pointer'}}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full inline-block transition-colors duration-300"
               >
                 Learn More
@@ -100,6 +101,7 @@ const Hero = () => {
                 to="contact"
                 smooth={true}
                 duration={500}
+                style={{cursor:'pointer'}}
                 className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-full inline-block transition-all duration-300"
               >
                 Contact Me

@@ -66,7 +66,7 @@ const Projects = () => {
             Featured Projects
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-16">
             {projects.map((project, index) => (
               <Tilt
                 key={index}

@@ -11,6 +11,7 @@ import Projects from './components/Projects'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Certifications from './components/Certifications'
 import './App.css'
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
       <AnimatePresence mode="wait">
         <Hero />
         <About />
+        <Certifications/>
         <Experience />
         <Skills />
         <Projects />
@@ -80,7 +82,7 @@ function App() {
               to="hero"
               smooth={true}
               duration={500}
-              className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg cursor-pointer transition-colors duration-300"
+              style={{cursor:'pointer'}}
             >
               <FaArrowUp />
             </Link>

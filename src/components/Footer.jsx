@@ -54,8 +54,8 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-gray-400 text-sm text-center md:text-right"
           >
-            <p>© {currentYear} Rambabu Ronte. All rights reserved.</p>
-            <p className="mt-2">Built with React & Tailwind CSS</p>
+            <p>© {currentYear} Rambabu Ronte.</p>
+           
           </motion.div>
         </div>
       </div>
