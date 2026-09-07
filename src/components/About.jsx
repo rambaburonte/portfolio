@@ -44,12 +44,12 @@ const About = () => {
 
           <motion.div 
             variants={itemVariants}
-            className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl flex flex-col md:flex-row items-center gap-8"
+            className="bg-gray-800/50 rounded-2xl p-8 shadow-xl flex flex-col md:flex-row items-center gap-8"
           >
             <img
               src={profileImage}
               alt="Profile portrait"
-              className="w-52 h-52 md:w-56 md:h-56 shrink-0 object-cover object-top rounded-full border-4 border-blue-400/30 shadow-lg"
+              className="w-60 h-60 md:w-64 md:h-64 shrink-0 object-cover object-center rounded-full border-4 border-blue-400/30 shadow-lg"
             />
             <p className="text-lg text-gray-300 leading-relaxed text-center md:text-left">
               Full Stack Web Developer with hands-on experience building responsive,
