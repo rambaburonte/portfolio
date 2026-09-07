@@ -12,7 +12,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "Full Stack Web Developer",
-      company: "General Logic Technologies Pvt Ltd",
+      company: "General Logic Pvt Ltd",
       duration: "September 2025 - Present",
       achievements: [
         "Developed and maintained a full-stack Conference Management System using ReactJS, JavaScript, HTML, and CSS on the frontend, with Java, Spring Boot, and MySQL on the backend",

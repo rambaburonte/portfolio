@@ -13,7 +13,7 @@ const Testimonials = () => {
     {
       text: "Rambabu has been a reliable full-stack contributor on our Conference Management System, comfortable moving between the ReactJS frontend and the Spring Boot backend without missing a beat.",
       author: "Sandeep Kumar",
-      position: "Manager, General Logic Technologies"
+      position: "Manager, General Logic"
     },
     {
       text: "Rambabu demonstrated exceptional skills in Java development during his internship. His ability to quickly grasp complex concepts and deliver quality code was impressive.",
