@@ -12,8 +12,8 @@ const Contact = () => {
   const contactItems = [
     {
       icon: FaPhone,
-      href: "tel:+919347818857",
-      text: "+91 9347818857",
+      href: "tel:+919951615233",
+      text: "+91 9951615233",
       color: "from-green-600/20 to-emerald-600/20",
       borderColor: "border-green-500/30 hover:border-green-500/50"
     },

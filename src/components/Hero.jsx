@@ -32,11 +32,11 @@ const Hero = () => {
             <div className="text-xl md:text-2xl text-gray-300 h-20">
               <TypeAnimation
                 sequence={[
+                  'Full Stack Web Developer',
+                  2000,
+                  'ReactJS & Spring Boot',
+                  2000,
                   'Java Developer',
-                  2000,
-                  'Backend Specialist',
-                  2000,
-                  'Spring Boot Expert',
                   2000,
                 ]}
                 wrapper="span"
@@ -53,8 +53,9 @@ const Hero = () => {
             className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
           >
             <p>
-              Transforming ideas into robust, scalable backend solutions with Java and Spring Boot.
-              Passionate about clean code and microservices architecture.
+              Building responsive, user-facing web applications end to end with ReactJS,
+              Java, and Spring Boot. Passionate about clean code, seamless frontend-backend
+              integration, and scalable microservices architecture.
             </p>
           </motion.div>
 

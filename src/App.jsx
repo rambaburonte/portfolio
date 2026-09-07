@@ -61,8 +61,9 @@ function App() {
       <AnimatePresence mode="wait">
         <Hero />
         <About />
+         <Experience />
         <Certifications/>
-        <Experience />
+       
         <Skills />
         <Projects />
         <Testimonials />

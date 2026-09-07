@@ -9,7 +9,8 @@ const Skills = () => {
   })
 
   const skillCategories = {
-    'Programming Languages': ['Java'],
+    'Programming Languages': ['Java', 'JavaScript'],
+    'Web Technologies': ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Responsive Design'],
     'Frameworks & Libraries': [
       'Spring',
       'Spring Boot',
@@ -21,7 +22,7 @@ const Skills = () => {
       'SLF4J',
     ],
     'Databases': ['Oracle', 'MySQL'],
-    'Web Technologies': ['HTML', 'CSS'],
+    'Cloud & Payments': ['AWS EC2', 'AWS RDS', 'Secrets Manager', 'Stripe', 'PayPal', 'Razorpay'],
     'Tools & Platforms': ['GitHub', 'Maven', 'JIRA'],
     'Methodologies': ['Agile', 'Scrum'],
   }

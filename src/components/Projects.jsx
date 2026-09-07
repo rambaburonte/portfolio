@@ -12,26 +12,19 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Conference Management System",
+      description: "Built a full-stack Conference Management System end to end: ReactJS, JavaScript, HTML, and CSS on the frontend, with Java, Spring Boot, and MySQL on the backend, covering registration, event management, and participant workflows with integrated Stripe, PayPal, and Razorpay payments.",
+      technologies: ["ReactJS", "Java", "Spring Boot", "MySQL", "Stripe API", "PayPal", "Razorpay"],
+
+    },
+    {
       title: "Stripe Payment Integration",
       description: "Integrated Stripe payment processing in a Spring Boot microservices backend, enabling seamless transactions, secure API communication, and robust error handling.",
       technologies: ["Java", "Spring Boot", "MySQL","JDBC Template", "Stripe API"],
-      // github: "https://github.com/rambaburonte/ecommerce-backend",
-      live: "#"
+     
     },
-    {
-      title: "Group Expenditure Management",
-      description: "Built a Group Expense Manager in Spring Boot with Spring Security for role-based access, Spring Data JPA for efficient data handling, and an intuitive UI using JSTL, JSP, HTML, and CSS for seamless expense tracking",
-      technologies: ["Java", "Spring Boot", "Sprin Boot Data JPA", "Oracle"],
-      github: "https://github.com/rambaburonte/ExpenditureManagement",
-      live: "#"
-    }
-    // {
-    //   title: "Inventory System",
-    //   description: "Microservices-based inventory management system with real-time stock updates and automated reordering.",
-    //   technologies: ["Java", "Spring Cloud", "MySQL", "Docker"],
-    //   github: "https://github.com/rambaburonte/inventory-system",
-    //   live: "#"
-    // }
+    
+     
   ]
 
   const containerVariants = {

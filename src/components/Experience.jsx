@@ -9,15 +9,35 @@ const Experience = () => {
     triggerOnce: true
   })
 
-  const achievements = [
-    "Designed and developed scalable backend services using Java, Spring Boot, and Microservices",
-    "Integrated third-party APIs securely and efficiently",
-    "Implemented RESTful APIs following industry best practices",
-    "Developed payment processing modules with Stripe integration",
-    "Implemented authentication mechanisms and encryption for security compliance",
-    "Utilized AWS services for deployment and infrastructure management",
-    "Conducted unit testing with JUnit and Mockito",
-    "Applied design patterns for modular and maintainable applications"
+  const experiences = [
+    {
+      title: "Full Stack Web Developer",
+      company: "General Logic Technologies Pvt Ltd",
+      duration: "September 2025 - Present",
+      achievements: [
+        "Developed and maintained a full-stack Conference Management System using ReactJS, JavaScript, HTML, and CSS on the frontend, with Java, Spring Boot, and MySQL on the backend",
+        "Designed and implemented RESTful APIs using Spring Boot for user registration, event management, and participant workflows",
+        "Integrated multiple payment gateways (Stripe, PayPal, Razorpay) end-to-end, covering backend transaction processing and frontend validation",
+        "Optimized MySQL queries for efficient data retrieval and transaction management",
+        "Built responsive, semantic UI components and debugged issues across the full stack",
+        "Collaborated with the team in an Agile development environment"
+      ]
+    },
+    {
+      title: "Java Developer Intern",
+      company: "HulkHire Tech",
+      duration: "2 months",
+      achievements: [
+        "Designed and developed scalable backend services using Java, Spring Boot, and Microservices",
+        "Integrated third-party APIs securely and efficiently",
+        "Implemented RESTful APIs following industry best practices",
+        "Developed payment processing modules with Stripe integration",
+        "Implemented authentication mechanisms and encryption for security compliance",
+        "Utilized AWS services for deployment and infrastructure management",
+        "Conducted unit testing with JUnit and Mockito",
+        "Applied design patterns for modular and maintainable applications"
+      ]
+    }
   ]
 
   const containerVariants = {
@@ -52,35 +72,38 @@ const Experience = () => {
             Experience
           </motion.h2>
 
-          <motion.div 
-            variants={itemVariants}
-            className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl"
-          >
-            <div className="flex items-center mb-8">
-              <div className="bg-blue-600/20 p-4 rounded-full mr-6">
-                <FaBriefcase className="text-blue-400 text-3xl" />
+          {experiences.map((exp, expIndex) => (
+            <motion.div 
+              key={expIndex}
+              variants={itemVariants}
+              className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl"
+            >
+              <div className="flex items-center mb-8">
+                <div className="bg-blue-600/20 p-4 rounded-full mr-6">
+                  <FaBriefcase className="text-blue-400 text-3xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">{exp.title}</h3>
+                  <p className="text-blue-400 mt-1">{exp.company} | {exp.duration}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-semibold">Java Developer Intern</h3>
-                <p className="text-blue-400 mt-1">HulkHire Tech | 2 months</p>
-              </div>
-            </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {achievements.map((achievement, index) => (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  className="flex items-start space-x-4 bg-gray-700/30 rounded-lg p-4"
-                >
-                  <span className="flex-shrink-0 bg-blue-600/20 p-2 rounded-full">
-                    <FaCheck className="text-blue-400" />
-                  </span>
-                  <span className="text-gray-300">{achievement}</span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+              <div className="grid md:grid-cols-2 gap-6">
+                {exp.achievements.map((achievement, index) => (
+                  <motion.div
+                    key={index}
+                    variants={itemVariants}
+                    className="flex items-start space-x-4 bg-gray-700/30 rounded-lg p-4"
+                  >
+                    <span className="flex-shrink-0 bg-blue-600/20 p-2 rounded-full">
+                      <FaCheck className="text-blue-400" />
+                    </span>
+                    <span className="text-gray-300">{achievement}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

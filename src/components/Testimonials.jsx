@@ -11,15 +11,16 @@ const Testimonials = () => {
 
   const testimonials = [
     {
+      text: "Rambabu has been a reliable full-stack contributor on our Conference Management System, comfortable moving between the ReactJS frontend and the Spring Boot backend without missing a beat.",
+      author: "Sandeep Kumar",
+      position: "Manager, General Logic Technologies"
+    },
+    {
       text: "Rambabu demonstrated exceptional skills in Java development during his internship. His ability to quickly grasp complex concepts and deliver quality code was impressive.",
       author: "Tausif S",
       position: "Tech Lead, HulkHire Tech"
     },
-    {
-      text: "Working with Rambabu was a pleasure. His dedication to writing clean, maintainable code and his enthusiasm for learning new technologies made him a valuable team member.",
-      author: "Rameez Shaikh",
-      position: "Senior Developer, HulkHire Tech"
-    }
+     
   ]
 
   const containerVariants = {

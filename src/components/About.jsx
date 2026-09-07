@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaGraduationCap, FaCertificate } from 'react-icons/fa'
+import profileImage from '../assets/profile.png'
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -43,13 +44,20 @@ const About = () => {
 
           <motion.div 
             variants={itemVariants}
-            className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl"
+            className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl flex flex-col md:flex-row items-center gap-8"
           >
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Aspiring Java Developer with a strong foundation in backend development
-              and valuable internship experience at HulkHire Tech. Passionate about
-              building secure, efficient applications using Java, Spring Boot, and
-              Microservices architecture.
+            <img
+              src={profileImage}
+              alt="Profile portrait"
+              className="w-52 h-52 md:w-56 md:h-56 shrink-0 object-cover object-top rounded-full border-4 border-blue-400/30 shadow-lg"
+            />
+            <p className="text-lg text-gray-300 leading-relaxed text-center md:text-left">
+              Full Stack Web Developer with hands-on experience building responsive,
+              user-facing applications using ReactJS, JavaScript, HTML, and CSS on the
+              frontend, backed by Java, Spring Boot, and MySQL. Currently building a
+              full-stack Conference Management System at General Logic Technologies,
+              with earlier backend experience at HulkHire Tech. Passionate about
+              building secure, efficient applications end to end, from UI to database.
             </p>
           </motion.div>
           <br></br>
