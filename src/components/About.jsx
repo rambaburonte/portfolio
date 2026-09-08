@@ -81,7 +81,7 @@ const About = () => {
               </div>
               <div className="space-y-4">
                 <h4 className="text-xl font-medium">Bachelor of Technology in Mechanical Engineering</h4>
-                <p className="text-blue-400">Minor in Computer Science and Engineering (Artificial Intelligence & Machine Learning)</p>
+                <p className="text-blue-400">Minor Degree in Computer Science and Engineering (Artificial Intelligence & Machine Learning)</p>
                 <p className="text-gray-400">Vaagdevi College of Engineering</p>
               </div>
               
